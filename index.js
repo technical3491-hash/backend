@@ -21,7 +21,7 @@ app.use(cors()); // Enable CORS for all routes
 app.use("/weather", weatherRouter);
 
 // MongoDB connection URL
-const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://sanjay45:Sanjay45s@cluster0.smjq8zg.mongodb.net/weather_db?appName=Cluster0";
+const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://sanjay45:Sanjay45@cluster0.smjq8zg.mongodb.net/weather_db?appName=Cluster0";
 
 // Connect to MongoDB and start the server
 mongoose.connect(MONGODB_URL).then(() => {
